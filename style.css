@@ -17,7 +17,14 @@
     text-decoration: none;
     list-style-type: none;
     color: #ABDB06;
+    transition: 0.3s;
 }
+.header nav ul li a:hover{
+    color: #6eca05;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
 .header nav ul{
     text-align: center;
     justify-content: space-around;
@@ -38,4 +45,54 @@
     margin-top: 250px;
     font-size: large;
     font-weight: bolder;
+}
+.main1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 100px;
+
+}
+.main{
+    width: 100%;
+    height: 1000px;
+}
+.main h3{
+    color: #13861E;
+}
+.kurs{
+    width: 480px;
+    height: 330px;
+    top: 20px;
+}
+.kurs img{
+    padding: 16px 0;
+}
+.main h1{
+    text-align: center;
+    padding: 15px 0;
+}
+.yangiliklar1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 100px;
+}
+.yangiliklar{
+    width: 100%;
+    height: 1000px;
+}
+.new{
+    width: 480px;
+    height: 330px;
+    top: 20px;
+}
+.new img{
+    padding: 16px 0;
+}
+.yangiliklar h1{
+    text-align: center;
+    padding: 15px 0;
 }
