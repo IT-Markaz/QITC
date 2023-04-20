@@ -26,7 +26,7 @@
     text-align: center;
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: auto;
 }
 
 nav ul li {
@@ -65,6 +65,12 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.header-about img {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
 .header-about p {
     margin: 40px 40px;
     font-size: 25px;
@@ -80,7 +86,7 @@ nav ul li a:hover {
 
 /* -------------------- PART-2 ---------------------------------------- */
 .all-container .part-2 {
-    width: 100%;
+    width: auto;
     height: auto;
     margin: 50px 0;
     background-color: #F2F2F2;
@@ -91,6 +97,8 @@ nav ul li a:hover {
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     grid-gap: 50px;
+    text-align: center;
+    padding: 0px 100px;
 }
 
 .part-2 h1 {
@@ -100,8 +108,6 @@ nav ul li a:hover {
 
 .part-2 #part-box {
     display: inline-block;
-    width: 450px;
-    height: 500px;
     margin: 15px 0;
     overflow: hidden;
 }
@@ -112,8 +118,7 @@ nav ul li a:hover {
 }
 
 .part-2 #part-box .over img {
-    width: 450px;
-    height: 300px;
+    width: auto;
     transition: .5s;
 }
 
@@ -125,6 +130,11 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+.part-2 #part-box .over img {
+    width: 100%;
+    height: auto;
+}
+
 .part-2 #part-box h3 {
     text-align: center;
     padding: 10px 0;
@@ -133,47 +143,166 @@ nav ul li a:hover {
 }
 
 .part-2 #part-box p {
-    width: 400px;
     text-align: center;
     padding: 10px 0;
     font-size: 25px;
 }
 
 /* ------------------NEWS----------------- */
-.all-container .news {
-    width: 100%;
-    height: auto;
-}
-.news h1{
+.news h1 {
     text-align: center;
     padding: 0px 0px 20px 0px;
     font-size: 50px;
     margin-bottom: 25px;
 }
-.news .news-box{
+
+.news .news-box {
     display: inline-block;
-    width: 450px;
-    height: 500px;
     margin: 15px 0;
 }
-.news .news-box img{
-    width: 450px;
-    height: 300px;
+
+.news .news-box img {
+    width: 100%;
+    height: auto;
 }
-.news .news-box .date{
+
+.news .news-box .date {
     color: #666;
 }
-.news .news-box p{
-    width: 400px;
+
+.news .news-box p {
     text-align: center;
     padding: 10px 0;
     font-size: 25px;
 }
-.news .news-box p a{
+
+.news .news-box p a {
     text-decoration: none;
     color: black;
 }
-.news .news-box p a:hover{
+
+.news .news-box p a:hover {
     text-decoration: underline;
     color: blue;
+}
+
+/* -------------------COURSES------------------------- */
+.part-3 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-image: url(../imgs/maxresdefault\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #13861E;
+}
+
+.part-3 h1 {
+    height: auto;
+    padding: 100px 0;
+    font-size: 50px;
+}
+
+.course-display {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+    justify-content: space-around;
+}
+
+.course {
+    padding: 40px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.course-box {
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+}
+
+.course-box p {
+    flex-shrink: 0;
+    flex-basis: 300px;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* -------------------FOOTER---------------------- */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #878484;
+
+
+}
+
+footer .table {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.table ul {
+    list-style-type: none;
+    line-height: 30px;
+    padding: 20px 10px;
+    line-height: 50px;
+    font-size: 35px;
+}
+
+.table ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.table .maps a {
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.table .maps a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.table .f-links li a:hover {
+    color: blue;
+    text-decoration: underline;
+    transform: scale(1.3);
+}
+
+.table .f-brands {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    text-align: center;
+}
+
+.table .f-brands li a img {
+    width: auto;
+    height: 70px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.table .f-brands li:nth-child(1) img:hover {
+    box-shadow: 0 0 30px #0088CC,  0 0 40px #0088CC, 0 0 40px #0088CC;
+    transform: scale(1.2);
+}
+.table .f-brands li:nth-child(2) img:hover {
+    box-shadow: 0 0 30px  #c4302b,  0 0 40px  #c4302b, 0 0 40px  #c4302b;
+    transform: scale(1.2);
+}
+.table .f-brands li:nth-child(3) img:hover {
+    box-shadow: 0 0 30px #c32aa3,  0 0 40px #99147c, 0 0 40px #591149;
+    transform: scale(1.2);
+}
+.table .f-brands li:nth-child(4) img:hover {
+    box-shadow: 0 0 30px #3b5998,  0 0 40px #3b5998, 0 0 40px #3b5998;
+    transform: scale(1.2);
 }
