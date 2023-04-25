@@ -48,13 +48,6 @@ nav ul li a:hover {
     color: rgb(119, 233, 119);
 }
 
-.active {
-    width: auto;
-    height: 45px;
-    border-bottom: 5px solid #ABDB06;
-    transition: .7s;
-}
-
 .active:hover {
     border: none;
 }
@@ -159,8 +152,13 @@ nav ul li a:hover {
 .news .news-box {
     display: inline-block;
     margin: 15px 0;
+    background-color: #c0bfbf4f;
 }
 
+.news .news-box:hover{
+    cursor: pointer;
+    background-color: #c0bfbf9c;
+}
 .news .news-box img {
     width: 100%;
     height: auto;
@@ -191,9 +189,6 @@ nav ul li a:hover {
     width: auto;
     height: auto;
     text-align: center;
-    background-image: url(../imgs/maxresdefault\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #13861E;
 }
 
@@ -202,32 +197,32 @@ nav ul li a:hover {
     padding: 100px 0;
     font-size: 50px;
 }
-
-.course-display {
+.course {
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 10px;
-    justify-content: space-around;
-}
-
-.course {
-    padding: 40px 0;
-    width: 80%;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .course-box {
-    display: flex;
-    padding: 40px 0;
-    align-items: center;
+    background-color: #c0bfbf40;
+    width: auto;
 }
 
+.course-box:hover{
+    background-color: #c0bfbf91;
+    cursor: pointer;
+}
+.course-box img{
+    width: auto;
+}
 .course-box p {
-    flex-shrink: 0;
-    flex-basis: 300px;
     font-size: 35px;
-    text-align: left;
-    padding-left: 15px;
+    padding: 40px 0;
+    max-width: 450px; 
+    margin: auto;
 }
 
 /* -------------------FOOTER---------------------- */
@@ -235,8 +230,6 @@ footer {
     width: 100%;
     height: auto;
     background-color: #878484;
-
-
 }
 
 footer .table {
@@ -245,6 +238,7 @@ footer .table {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
 }
 
 .table ul {
