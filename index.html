@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <title>Qo'shrabot | IT-CENTER</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/css/all.min.css">
 </head>
 
 <body>
     <div class="all-container">
         <div class="header" id="part">
-            <nav>
-                <ul>
-                    <li><a href="#part"> Biz haqimizda</a></li>
-                    <li><a href="#news" class="active">Yangiliklar</a></li>
+            <button id="btn"><i class="fa-solid fa-x"></i></button>
+            <button id="btn2"><i class="fa-solid fa-bars"></i></button>
+            <nav id="location">
+                <ul class="location__ul">
+                    <li><a href="#part">Biz haqimizda</a></li>
+                    <li><a href="#news">Yangiliklar</a></li>
                     <li><a href="#course">Kurslarimiz</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
+
             <div class="header-about">
                 <img src="imgs/logo.png" alt="it center logo">
                 <p><span>IT</span>-CENTERning Qo'shrabot tumai filialiga rasmiy web-saytiga hush kelibsiz!<br>
@@ -37,42 +42,42 @@
         <div class="part-2">
             <h1>TA'LIMGA TIZIMLI YONDASHUV</h1>
             <br>
-            <div class="display-box">
-                <div id="part-box">
+            <div class="display-box slider">
+                <div id="part-box" class="slide">
                     <div class="over"><img src="imgs/p2img1.png" alt=""></div>
                     <h3>O’zingizga mos kursni tanlash</h3>
                     <p>Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo'yicha kurslarni taqdim
                         etamiz
                         va tanlash imkonini beramiz.</p>
                 </div>
-                <div id="part-box">
+                <div id="part-box" class="slide">
                     <div class="over"><img src="imgs/p2img2.png" alt=""></div>
                     <h3> O’quv jarayoni</h3>
                     <p>O'quv jarayoni amaliy mashqlar, mentor bilan ishlash imkoniyati hamda live meetinglar orqali olib
                         boriladi.</p>
                 </div>
-                <div id="part-box">
+                <div id="part-box" class="slide">
                     <div class="over"><img src="imgs/p2img3.png" alt=""></div>
                     <h3>Real loyihalarni amalga oshirish</h3>
                     <p>Har bir kursdagi mavzulashtirilgan darslarda real loyihalardan qismlar orqali tushuntirib
                         beriladi.
                     </p>
                 </div>
-                <div id="part-box">
+                <div id="part-box" class="slide">
                     <div class="over"><img src="imgs/p2im4.png" alt=""></div>
                     <h3>Sertifikat bilan taqdirlash</h3>
                     <p>Kurs so'nggida talabaning o'zlashtirish ko'rsatkichlari e'tiborga olingan holda sertifikat
                         beriladi.
                     </p>
                 </div>
-                <div id="part-box">
+                <div id="part-box" class="slide">
                     <div class="over"><img src="imgs/p2img5.png" alt=""></div>
                     <h3>Ish bilan ta’minlashda ko’mak </h3>
                     <p>Kurslarni muvaffaqiyatli tamomlagan talabalarga ish bilan ta’minlashda amaliy yordam
                         ko’rsatiladi.
                     </p>
                 </div>
-                <div id="part-box">
+                <div id="part-box" class="slide">
                     <div class="over"><img src="imgs/p2img6.png" alt=""></div>
                     <h3>Ishga kiring va karyerangizni boshlang</h3>
                     <p>Biz bilan kurslarni muvaffaqiyatli tamomlang va orzu qilgan ish o'rningiz egasiga aylaning.
@@ -80,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="news" id="news">
+        <!-- <div class="news" id="news">
             <h1>Yangiliklar</h1>
             <div class="display-box">
                 <div class="news-box">
@@ -179,8 +184,9 @@
                     <li><a href="#"><img src="imgs/facebooklogo.png" alt=""></a></li>
                 </ul>
             </div>
-        </footer>
+        </footer> -->
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

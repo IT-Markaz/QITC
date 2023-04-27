@@ -1,0 +1,60 @@
+@media screen and (max-width: 767px) {
+
+    #location {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        /* background-color: #555; */
+        transition: .5s;
+    }
+
+    nav ul {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+
+    #btn {
+        display: none;
+        float: right;
+        padding: 5px 10px;
+        font-size: 30px;
+        border: none;
+        font-weight: 900;
+        color: red;
+    }    
+    #btn2{
+        display: block;
+        padding: 5px 10px;
+        font-size: 30px;
+        border: none;
+        background-color: #688eb3;  
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+    }  
+    /* -----------------PART-2--------------------- */
+    .display-box{
+      display: flex;
+      flex-direction: column;
+    }
+    /* --------------------sdgfsadfas------- */
+    .header-about {
+        width: 100vw ;
+    }
+    .header-about img{
+        width: 350px;
+    }
+    .header-about p{
+        width: 100% ;
+        font-size: 1em;
+        line-height: 1.5em;
+        padding: 0px 15px;
+    }
+}
