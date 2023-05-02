@@ -1,18 +1,50 @@
 @media screen and (max-width: 767px) {
-
-    #location {
-        display: none;
-        width: 100vw;
-        height: 100vh;
-        /* background-color: #555; */
-        transition: .5s;
+    *{
+        margin: 0;
+        padding: 0;
     }
+    .header{
+        position: relative;
+    }
+    #location {
+        display: block;
+        background-color: #555;
+        position: absolute; 
+        width: 100vw;
+        height: 100%;
+    }
+    .hidden{
+        transform: translate(-100%, -100%);
+        transition: .2s;
+    }
+    #location ul{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
+    }
+    .animation{
+        animation: anim 2s infinite;
+    }
+    @keyframes anim {
+        0%{
+            transform: translate(-50%, 0%);
+        }
+        50%{
+            transform: translate(-25%, 0%);
+        }
+        100%{
+            transform: translate(0%, 0%);
+        }
+    }
     nav ul {
         display: block;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        max-width: 100vw;
     }
 
     nav ul li {
@@ -22,7 +54,7 @@
     }
 
     #btn {
-        display: none;
+        display: block;
         float: right;
         padding: 5px 10px;
         font-size: 30px;
@@ -32,7 +64,7 @@
     }    
     #btn2{
         display: block;
-        padding: 5px 10px;
+        padding: 5px 5px;
         font-size: 30px;
         border: none;
         background-color: #688eb3;  
@@ -40,14 +72,16 @@
         color: rgb(0, 0, 0);
     }  
     /* -----------------PART-2--------------------- */
+    #part-2{
+        margin: 0 auto;
+    }
     .display-box{
+    max-width: 96% !important;
       display: flex;
       flex-direction: column;
+      margin: 0;
     }
-    /* --------------------sdgfsadfas------- */
-    .header-about {
-        width: 100vw ;
-    }
+    /* --------------------header-about------- */
     .header-about img{
         width: 350px;
     }
@@ -56,5 +90,67 @@
         font-size: 1em;
         line-height: 1.5em;
         padding: 0px 15px;
+    }
+
+    /* -----------------news--------- */
+    .course{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .course-box{
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+    }
+    .course-box p{
+        font-size: 22px;
+    }
+    .course-box img{
+        width: 100%;
+        height: 300px;
+    }
+    .course-box{
+        background-color: #eee;
+    }
+    /* ----------foooter----------- */
+    footer .table {
+        text-align: left;
+        width: 96%;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+    .table ul {
+        margin-top: 10px;
+        font-size: 22px;
+        list-style-type: none;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    .table .f-brands  li a img{
+        width: 50px;
+        height: 50px;
+    }
+    .table .f-brands {
+        grid-template-columns: repeat(4, auto);
+        align-items: center;
+        text-align: center;
+    }
+    .f-about .maps a{
+        font-size: 18px;
+        color: blue;
+    }
+    .course-box, #part-box, .news-box{
+        box-shadow: 10px 10px 10px #aaa;
+    }
+
+    .news *{
+        display: none;                
+    }
+    .news h1, .news .display-box, .news-box:nth-child(1){
+        display: block;
     }
 }
