@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <title>Qo'shrabot | IT-CENTER</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/css/all.min.css">
 </head>
 
 <body>
+    <div id="progressbar"></div>
     <div class="all-container">
         <div class="header" id="part">
 
@@ -20,7 +21,7 @@
             <nav id="location" class="hidden">
                 <button id="btn"><i class="fa-solid fa-x"></i></button>
                 <ul class="location__ul">
-                    <li><a href="#part">Biz haqimizda</a></li>
+                    <li><a href="#about">Biz haqimizda</a></li>
                     <li><a href="#news">Yangiliklar</a></li>
                     <li><a href="#course">Kurslarimiz</a></li>
                     <li><a href="#footer">Contact</a></li>
@@ -40,100 +41,99 @@
             </div>
         </div>
         <div class="witdh-con">
-            <div class="part-2">
+            <div class="about" id="about">
                 <h1>TA'LIMGA TIZIMLI YONDASHUV</h1>
-                <br>
-                <div class="display-box slider">
-                    <div id="part-box" class="slide">
-                        <div class="over"><img src="imgs/p2img1.png" alt=""></div>
-                        <h3>O’zingizga mos kursni tanlash</h3>
-                        <p>Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo'yicha kurslarni
-                            taqdim
-                            etamiz
-                            va tanlash imkonini beramiz.</p>
-                    </div>
-                    <div id="part-box" class="slide">
-                        <div class="over"><img src="imgs/p2img2.png" alt=""></div>
-                        <h3> O’quv jarayoni</h3>
-                        <p>O'quv jarayoni amaliy mashqlar, mentor bilan ishlash imkoniyati hamda live meetinglar orqali
-                            olib
-                            boriladi.</p>
-                    </div>
-                    <div id="part-box" class="slide">
-                        <div class="over"><img src="imgs/p2img3.png" alt=""></div>
-                        <h3>Real loyihalarni amalga oshirish</h3>
-                        <p>Har bir kursdagi mavzulashtirilgan darslarda real loyihalardan qismlar orqali tushuntirib
-                            beriladi.
-                        </p>
-                    </div>
-                    <div id="part-box" class="slide">
-                        <div class="over"><img src="imgs/p2im4.png" alt=""></div>
-                        <h3>Sertifikat bilan taqdirlash</h3>
-                        <p>Kurs so'nggida talabaning o'zlashtirish ko'rsatkichlari e'tiborga olingan holda sertifikat
-                            beriladi.
-                        </p>
-                    </div>
-                    <div id="part-box" class="slide">
-                        <div class="over"><img src="imgs/p2img5.png" alt=""></div>
-                        <h3>Ish bilan ta’minlashda ko’mak </h3>
-                        <p>Kurslarni muvaffaqiyatli tamomlagan talabalarga ish bilan ta’minlashda amaliy yordam
-                            ko’rsatiladi.
-                        </p>
-                    </div>
-                    <div id="part-box" class="slide">
-                        <div class="over"><img src="imgs/p2img6.png" alt=""></div>
-                        <h3>Ishga kiring va karyerangizni boshlang</h3>
-                        <p>Biz bilan kurslarni muvaffaqiyatli tamomlang va orzu qilgan ish o'rningiz egasiga aylaning.
-                        </p>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div id="part-box" class="slide">
+                            <div class="over"><img src="imgs/p2img1.png" alt=""></div>
+                            <h3>O’zingizga mos kursni tanlash</h3>
+                            <p>Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo'yicha kurslarni
+                                taqdim
+                                etamiz
+                                va tanlash imkonini beramiz.</p>
+                        </div>
+                        <div id="part-box" class="slide">
+                            <div class="over"><img src="imgs/p2img2.png" alt=""></div>
+                            <h3> O’quv jarayoni</h3>
+                            <p>O'quv jarayoni amaliy mashqlar, mentor bilan ishlash imkoniyati hamda live meetinglar
+                                orqali
+                                olib
+                                boriladi.</p>
+                        </div>
+                        <div id="part-box" class="slide">
+                            <div class="over"><img src="imgs/p2img3.png" alt=""></div>
+                            <h3>Real loyihalarni amalga oshirish</h3>
+                            <p>Har bir kursdagi mavzulashtirilgan darslarda real loyihalardan qismlar orqali tushuntirib
+                                beriladi.
+                            </p>
+                        </div>
+                        <div id="part-box" class="slide">
+                            <div class="over"><img src="imgs/p2im4.png" alt=""></div>
+                            <h3>Sertifikat bilan taqdirlash</h3>
+                            <p>Kurs so'nggida talabaning o'zlashtirish ko'rsatkichlari e'tiborga olingan holda
+                                sertifikat
+                                beriladi.
+                            </p>
+                        </div>
+                        <div id="part-box" class="slide">
+                            <div class="over"><img src="imgs/p2img5.png" alt=""></div>
+                            <h3>Ish bilan ta’minlashda ko’mak </h3>
+                            <p>Kurslarni muvaffaqiyatli tamomlagan talabalarga ish bilan ta’minlashda amaliy yordam
+                                ko’rsatiladi.
+                            </p>
+                        </div>
+                        <div id="part-box" class="slide">
+                            <div class="over"><img src="imgs/p2img6.png" alt=""></div>
+                            <h3>Ishga kiring va karyerangizni boshlang</h3>
+                            <p>Biz bilan kurslarni muvaffaqiyatli tamomlang va orzu qilgan ish o'rningiz egasiga
+                                aylaning.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <button class="prew"><</button>
+                <button class="next">></button>
             </div>
             <div class="news" id="news">
                 <h1>Yangiliklar</h1>
-                <div class="display-box">
-                    <div class="news-box">
-                        <img src="imgs/news1.png" alt="">
-                        <div class="date">21:04 / 29.03.2023</div>
-                        <p><a href="#">🎮🏆Kiber sportmusobaqalariga yyormisiz? Sovrin jamg'armasi 332 million so'mni
-                                tashkil qiluvchi O'zbekistondagi eng yirik "Uzbekistan Esport Championship"
-                            </a></p>
-                    </div>
-                    <div class="news-box">
-                        <img src="imgs/news1.png" alt="">
-                        <div class="date">21:04 / 29.03.2023</div>
-                        <p><a href="#">🎮🏆Kiber sportmusobaqalariga yyormisiz? Sovrin jamg'armasi 332 million so'mni
-                                tashkil qiluvchi O'zbekistondagi eng yirik "Uzbekistan Esport Championship"
-                            </a></p>
-                    </div>
-                    <div class="news-box">
-                        <img src="imgs/news1.png" alt="">
-                        <div class="date">21:04 / 29.03.2023</div>
-                        <p><a href="#">🎮🏆Kiber sportmusobaqalariga yyormisiz? Sovrin jamg'armasi 332 million so'mni
-                                tashkil qiluvchi O'zbekistondagi eng yirik "Uzbekistan Esport Championship"
-                            </a></p>
-                    </div>
-                    <div class="news-box">
-                        <img src="imgs/news1.png" alt="">
-                        <div class="date">21:04 / 29.03.2023</div>
-                        <p><a href="#">🎮🏆Kiber sportmusobaqalariga yyormisiz? Sovrin jamg'armasi 332 million so'mni
-                                tashkil qiluvchi O'zbekistondagi eng yirik "Uzbekistan Esport Championship"
-                            </a></p>
-                    </div>
-                    <div class="news-box">
-                        <img src="imgs/news1.png" alt="">
-                        <div class="date">21:04 / 29.03.2023</div>
-                        <p><a href="#">🎮🏆Kiber sportmusobaqalariga yyormisiz? Sovrin jamg'armasi 332 million so'mni
-                                tashkil qiluvchi O'zbekistondagi eng yirik "Uzbekistan Esport Championship"
-                            </a></p>
-                    </div>
-                    <div class="news-box">
-                        <img src="imgs/news1.png" alt="">
-                        <div class="date">21:04 / 29.03.2023</div>
-                        <p><a href="#">🎮🏆Kiber sportmusobaqalariga yyormisiz? Sovrin jamg'armasi 332 million so'mni
-                                tashkil qiluvchi O'zbekistondagi eng yirik "Uzbekistan Esport Championship"
-                            </a></p>
+                <div class="slider-container slide2">
+                    <div class="slider">
+                        <div class="slide">
+                            <video src="imgs/newsimg/yozgi tatil.mp4" autoplay muted></video>
+                            <div class="date">21:04 / 29.03.2023</div>
+                            <p><a href="news.html" target="_blank">
+                                    👨‍👨‍👧‍👧 Siz yozgi tatilni qanday o'tkazmoqchisiz
+                                </a></p>
+                        </div>
+                        <div class="slide">
+                            <img src="imgs/newsimg/111.jpg" alt="">
+                            <p>Qo'shrabot tumanidagi <br> IT-CENTER o'quv markazining rasmiy veb sayti ishga tushirildi</p>
+                        </div>
+                        <div class="slide">
+                            <img src="imgs/newsimg/photo_2023-05-18_14-22-50.jpg" alt="">
+                            <p><a href="https://telegra.ph/Sertifikatlar-Royxati-03-22" target="_blank">🖼Qo'shrabot tumani IT-Markaz yana bir guruh bitiruvchilari sertifikatlari yetib keldi!📋 Quyida bizning markazda "Kompyuter savodxonligi" kursini muvaffaqqiyatli tamomlagan O’quvchilar ro'yihati
+                                </a></p>
+                        </div>
+                        <div class="slide">
+                            <img src="imgs/newsimg/3.jpg" alt="">
+                            <p>“IT rivojlanayotgani va insonlarga ish o‘rinlari mavjudligi xursand qiladi”  Polina Rakova</p>
+                        </div>
+
+                        <div class="slide">
+                            <img src="imgs/newsimg/4.jpg" alt="">
+                            <p>🔔▪️Kutib oling Yandex'dan ChatGPT <br>
+                                Texnologiya YandexGPT deb ataladi va u Alisa bilan birlashtirilgan. Endi u har xil turdagi matnlarni yozishi va g’oyalar taklif qilishi mumkin...</p>
+                        </div>
+                        <div class="slide">
+                            <img src="imgs/newsimg/photo_2023-05-18_15-32-29.jpg" alt="">
+                            <p>Dasturlash tillarini qiyinlilik darajasi.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <button class="prew prew2"><</button>
+                 <button class="next next2">></button>
             </div>
             <div class="part-3" id="course">
                 <h1>Kurslarimiz</h1>
@@ -166,7 +166,6 @@
                         <img src="#" alt="">
                     </div>
                 </div>
-                <h1>Dars Jarayoni</h1>
             </div>
             <footer id="footer">
                 <div class="table">
@@ -175,7 +174,8 @@
                         <li><i class="fa-solid fa-envelope"></i> center@gmail.com</li>
                         <li><i class="fa-solid fa-location-dot"></i> Qo’shrabot tuman parki</li>
                         <li class="maps"><i class="fa-brands fa-google"></i><a
-                                href="https://www.google.com/maps/place/6JWW%2BFM8+IT-CENTER,+Qoshrabot,+Koshrabad,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@40.246037,66.6467902,19z/data=!4m6!3m5!1s0x3f52878d62852a5f:0x4eb4e86b0ac1a440!8m2!3d40.2461707!4d66.6466907!16s%2Fg%2F11ty7bvbq0?hl=ru-KG">View the GOOGLE</a></li>
+                                href="https://www.google.com/maps/place/6JWW%2BFM8+IT-CENTER,+Qoshrabot,+Koshrabad,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@40.246037,66.6467902,19z/data=!4m6!3m5!1s0x3f52878d62852a5f:0x4eb4e86b0ac1a440!8m2!3d40.2461707!4d66.6466907!16s%2Fg%2F11ty7bvbq0?hl=ru-KG"
+                                target="_blank">View the GOOGLE</a></li>
                     </ul>
                     <ul class="f-links">
                         <li><a href="#part">Biz haqimizda</a></li>
@@ -190,13 +190,23 @@
                                     src="imgs/Youtube2.png" alt=""></a></li>
                         <li><a href="https://www.instagram.com/it_center_qoshrabot/" target="_blank"><img
                                     src="imgs/insta2.png" alt=""></a></li>
-                        <li><a href="#"><img src="imgs/facebooklogo.png" alt=""></a></li>
+                        <li><a><img src="imgs/facebooklogo.png" alt=""></a></li>
                     </ul>
                 </div>
             </footer>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height();
+            scrollPercent = (scroll / (dh - wh)) * 100;
+            $('#progressbar').css('height', scrollPercent + '%')
+        })
+    </script>
 </body>
 
 </html>

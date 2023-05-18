@@ -1,8 +1,5 @@
 @media screen and (max-width: 767px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
+   
     .header{
         position: relative;
     }
@@ -31,9 +28,6 @@
     @keyframes anim {
         0%{
             transform: translate(-50%, 0%);
-        }
-        50%{
-            transform: translate(-25%, 0%);
         }
         100%{
             transform: translate(0%, 0%);
@@ -74,12 +68,7 @@
     /* -----------------PART-2--------------------- */
     #part-2{
         margin: 0 auto;
-    }
-    .display-box{
-    max-width: 96% !important;
-      display: flex;
-      flex-direction: column;
-      margin: 0;
+        background-color: #fff;
     }
     /* --------------------header-about------- */
     .header-about img{
@@ -92,11 +81,12 @@
         padding: 0px 15px;
     }
 
-    /* -----------------news--------- */
+    /* -----------------course--------- */
     .course{
         display: flex;
         flex-direction: column;
         text-align: center;
+        background-color: #fff;
     }
     .course-box{
         margin-top: 10px;
@@ -109,9 +99,6 @@
     .course-box img{
         width: 100%;
         height: 300px;
-    }
-    .course-box{
-        background-color: #eee;
     }
     /* ----------foooter----------- */
     footer .table {
@@ -146,11 +133,40 @@
     .course-box, #part-box, .news-box{
         box-shadow: 10px 10px 10px #aaa;
     }
-
-    .news *{
-        display: none;                
+    .slider .slide p, #part-box p, #part-box h3, .date{
+        font-size: 1em;
     }
-    .news h1, .news .display-box, .news-box:nth-child(1){
+    .about .slide .over img, .slide img{
+        height: 200px;
+    }
+    .news-page video{
+        width: 100%;
+    }
+    .news-page h1{
+        font-size: 22px;
+    }
+    .news-page p, .news-page ul li{
+        font-size: 17px;
+    }
+    /* -----btn-------- */
+    .news, .about{
+        position: relative;
+    }
+    .prew, .next{
         display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #ddd;
+        border-radius: 50%;
+        font-size: 22px;
+        border: none;
+        top: 55%;
+    }
+    .next{
+        right: 0;
+    }
+    #progressbar{
+        display: none;
     }
 }

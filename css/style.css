@@ -8,7 +8,8 @@
     margin: 0 auto;
 }
 .witdh-con{
-    max-width: 80%;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -86,104 +87,62 @@ nav ul li a:hover {
 }
 
 /* -------------------- PART-2 ---------------------------------------- */
-.all-container .part-2 {
-    width: auto;
-    height: auto;
-    margin: 50px 0;
-    background-color: #F2F2F2;
-}
-
-.display-box {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    grid-gap: 50px;
-    width: 90%;
+.about h1 {
     text-align: center;
-    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
 }
-
-.part-2 h1 {
-    text-align: center;
-    padding: 0px 0px 20px 0px;
-}
-
-.part-2 #part-box {
-    display: inline-block;
-    margin: 15px 0;
-    overflow: hidden;
-}
-
-.part-2 #part-box:hover {
-    background-color: #ccc;
-    cursor: pointer;
-}
-
-.part-2 #part-box .over img {
+.over img {
     width: auto;
     transition: .5s;
 }
-
-.part-2 #part-box:hover .over img {
+.over img {
     transform: scale(1.2);
 }
-
 .over {
     overflow: hidden;
 }
-
-.part-2 #part-box .over img {
-    width: 100%;
-    height: auto;
-}
-
-.part-2 #part-box h3 {
+#part-box h3 {
     text-align: center;
     padding: 10px 0;
     font-size: 28px;
     color: #13861E;
 }
-
-.part-2 #part-box p {
+#part-box p {
     text-align: center;
     padding: 10px 0;
     font-size: 25px;
 }
-
 /* ------------------NEWS-----------------*/
 .news h1 {
     text-align: center;
     padding: 0px 0px 20px 0px;
     font-size: 50px;
     margin-bottom: 25px;
+    padding-top: 15px;
 }
 
-.news .news-box {
+.slider .news-box {
     display: inline-block;
-    margin: 15px 0;
+    margin: 15px 50px;
     background-color: #c0bfbf4f;
 }
 
-.news .news-box:hover{
+.news .slider .news-box:hover{
     cursor: pointer;
     background-color: #c0bfbf9c;
 }
-.news .news-box img {
+.news .slider .news-box img {
     width: 100%;
     height: auto;
 }
 
-.news .news-box .date {
-    color: #666;
-}
-
-.news .news-box p {
+.news .slide p {
     text-align: center;
     padding: 10px 0;
     font-size: 25px;
 }
 
-.news .news-box p a {
+.news .slide p a {
     text-decoration: none;
     color: black;
 }
@@ -227,6 +186,7 @@ nav ul li a:hover {
 }
 .course-box img{
     width: auto;
+    object-fit: contain;
 }
 .course-box p {
     font-size: 35px;
@@ -310,3 +270,55 @@ footer .table {
     box-shadow: 0 0 30px #3b5998,  0 0 40px #3b5998, 0 0 40px #3b5998;
     transform: scale(1.2);
 } 
+.prew, .next{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #04e762,  #008bf8,  #4cc9f0);
+}
+.date{
+    display: none;
+}
+/* -------------news--------------------------- */
+.news-page{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    height: auto;
+}
+.news-page *{
+    padding: 10px 0;
+}
+.news-page video{
+    padding: 0;
+    width: auto;
+    height: 30vw;
+}
+.news-page h1{
+    font-size: 40px;
+}
+.news-page p{
+    font-size: 30px;
+}
+.news-page ul {
+    padding-left: 40px;
+}
+.news-page ul li{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: left;
+}
+.page-box{
+    margin: 0 auto;
+    width: 70%;
+}

@@ -15,3 +15,36 @@ Xbtn.addEventListener('click', ()=>{
     nav.classList.add('hidden');
     Obtn.style.display = 'inline-block';
 })
+
+const next = document.querySelector(".next");
+const prew = document.querySelector(".prew");
+const slideContainer = document.querySelector(".slider-container");
+
+next.addEventListener('click', ()=>{
+  const widtSlide = document.querySelector(".slide").offsetWidth;
+  slideContainer.scrollLeft += widtSlide;
+})
+
+prew.addEventListener('click', ()=>{
+    const widtSlide = document.querySelector(".slide").offsetWidth;
+    slideContainer.scrollLeft -= widtSlide;
+})
+
+
+
+const next2 = document.querySelector(".next2");
+const prew2 = document.querySelector(".prew2");
+const slide2 = document.querySelector(".slide2");
+
+next2.addEventListener('click', ()=>{
+  const widtSlide = document.querySelector(".slide").offsetWidth;
+  slide2.scrollLeft += widtSlide;
+})
+
+prew2.addEventListener('click', ()=>{
+  const widtSlide = document.querySelector(".slide").offsetWidth;
+  slide2.scrollLeft -= widtSlide;
+})
+
+
+
