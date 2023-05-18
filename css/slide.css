@@ -39,6 +39,9 @@ img{
 .slider .slide p{
     padding: 10px;
 }
+.slider .slide img{
+    object-fit: contain;
+}
 @media screen and (max-width:1024px) {
     .slider{
         display: flex;

@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 .header-about {
-    padding: 30px 10%;
+    padding: 30px 5%;
     width: auto;
     align-items: center;
 }
@@ -285,9 +285,6 @@ footer .table {
     height: 100%;
     border-radius: 10px;
     background: linear-gradient(to bottom, #04e762,  #008bf8,  #4cc9f0);
-}
-.date{
-    display: none;
 }
 /* -------------news--------------------------- */
 .news-page{

@@ -20,7 +20,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
     }
     .animation{
         animation: anim 2s infinite;
@@ -72,13 +71,16 @@
     }
     /* --------------------header-about------- */
     .header-about img{
-        width: 350px;
+        width: 300px;
     }
     .header-about p{
         width: 100% ;
         font-size: 1em;
         line-height: 1.5em;
         padding: 0px 15px;
+    }
+    .header{
+        overflow-y: scroll;
     }
 
     /* -----------------course--------- */
@@ -147,6 +149,14 @@
     }
     .news-page p, .news-page ul li{
         font-size: 17px;
+    }
+    .news-page{
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+    }
+    .news-page p{
+        padding-left: 10px;
     }
     /* -----btn-------- */
     .news, .about{
