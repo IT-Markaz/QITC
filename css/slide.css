@@ -42,6 +42,9 @@ img{
 .slider .slide img{
     object-fit: contain;
 }
+.slider .slide video{
+    object-fit: contain;
+}
 @media screen and (max-width:1024px) {
     .slider{
         display: flex;
