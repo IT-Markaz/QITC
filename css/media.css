@@ -22,7 +22,7 @@
         transform: translate(-50%, -50%);
     }
     .animation{
-        animation: anim 2s infinite;
+        animation: anim 0.5s;
     }
     @keyframes anim {
         0%{
@@ -53,16 +53,18 @@
         font-size: 30px;
         border: none;
         font-weight: 900;
-        color: red;
+        color: #7dba28;
+        background-color: transparent;  
     }    
     #btn2{
         display: block;
         padding: 5px 5px;
         font-size: 30px;
         border: none;
-        background-color: #688eb3;  
+        background-color: transparent;  
         font-weight: 900;
         color: rgb(0, 0, 0);
+        color: #7dba28;
     }  
     /* -----------------PART-2--------------------- */
     #part-2{

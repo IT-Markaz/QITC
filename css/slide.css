@@ -65,8 +65,7 @@ img{
 }
 @media screen and (max-width:360px) {
     .slider .slide{
-        width: calc(90vw - 10px);
-        
+        width: calc(90vw);
     }
     .header p{
         height: 250px;
