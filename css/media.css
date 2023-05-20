@@ -179,4 +179,7 @@
     #progressbar{
         display: none;
     }
+    .slide p{
+        overflow: scroll;
+    }
 }

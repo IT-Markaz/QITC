@@ -27,7 +27,7 @@ img{
     
 }
 .slider-container{
-    width: 100%;
+    width: 90%;
     margin: auto;
     overflow: auto;
     scroll-behavior: smooth;
@@ -52,16 +52,23 @@ img{
     }
     
     .slider .slide{
-        width: calc(33.3vw - 15px);
+        width: calc(30vw - 14px);
     }
 }
 @media screen and (max-width:760px) {
     .slider .slide{
-        width: calc(50vw - 15px);
+        width: calc(45vw - 15px);
+    }
+    .header p{
+        height: 350px;
     }
 }
 @media screen and (max-width:360px) {
     .slider .slide{
-        width: calc(100vw - 10px);
+        width: calc(90vw - 10px);
+        
+    }
+    .header p{
+        height: 250px;
     }
 }
