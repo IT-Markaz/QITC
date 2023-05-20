@@ -12,7 +12,7 @@
     }
     .hidden{
         transform: translate(-100%, -100%);
-        transition: .2s;
+        transition: .1s;
     }
     #location ul{
         position: absolute;
@@ -75,11 +75,10 @@
     }
     .header-about p{
         width: 100% ;
+        height: 250px;
         font-size: 1em;
         line-height: 1.5em;
         padding: 0px 15px;
-    }
-    .header{
         overflow-y: scroll;
     }
 
@@ -103,7 +102,10 @@
         height: 300px;
     }
     /* ----------foooter----------- */
-    footer .table {
+    footer{
+        margin-top: 15px;
+    }
+    footer .table{
         text-align: left;
         width: 96%;
         height: auto;
@@ -135,14 +137,12 @@
     .course-box, #part-box, .news-box{
         box-shadow: 10px 10px 10px #aaa;
     }
-    .slider .slide p, #part-box p, #part-box h3, .date{
-        font-size: 1em;
-    }
     .about .slide .over img, .slide img{
         height: 200px;
     }
     .news-page video{
         width: 100%;
+        object-fit: contain;
     }
     .news-page h1{
         font-size: 22px;
