@@ -44,5 +44,27 @@ prew2.addEventListener('click', ()=>{
   slide2.scrollLeft -= widtSlide;
 })
 
-
+const slide = document.querySelectorAll(".slide")
+const course = document.querySelectorAll(".course-box")
+window.addEventListener("scroll", ()=>{
+  const windowheight = window.innerHeight/5*4;
+  slide.forEach((sl)=>{
+    const slideTop = sl.getBoundingClientRect().top;
+    if(slideTop<windowheight){
+      sl.classList.add("scroll-anim")
+    }
+    else{
+      sl.classList.remove("scroll-anim")
+    }
+  })
+  course.forEach((sl)=>{
+    const slideTop = sl.getBoundingClientRect().top;
+    if(slideTop<windowheight){
+      sl.classList.add("scroll-anim")
+    }
+    else{
+      sl.classList.remove("scroll-anim")
+    }
+  })
+})
 

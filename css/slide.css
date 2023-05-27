@@ -16,6 +16,7 @@ html{
     overflow: hidden;
     transition: 0.4s;
     scroll-snap-align: start;
+    opacity: 0;
 }
 img{
     width: 100%;
@@ -32,6 +33,7 @@ img{
     overflow: auto;
     scroll-behavior: smooth;
     scroll-snap-type: both;
+   
 }
 .slider-container::-webkit-scrollbar{
   display: none;
@@ -69,5 +71,20 @@ img{
     }
     .header p{
         height: 250px;
+    }
+}
+.scroll-anim{
+    animation: scrollanim 1.5s;
+    opacity: 1; 
+    transform: translateY(0);
+}
+@keyframes scrollanim{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
